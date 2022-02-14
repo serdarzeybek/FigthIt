@@ -64,7 +64,7 @@ if __name__ == '__main__':
         if m is not None:
             peer = m.group(1)
             if log_only_failed:
-                print(line, end='')
+                print(line)
             if method == 'jsonrpc':
                 json_msg['params']['Addr'] = peer
                 print("Issuing request to miner to reload peer %s" % (peer,))
