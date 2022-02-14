@@ -4,7 +4,6 @@ import subprocess
 import time
 import sys
 import os
-
 method = 'dockercli'
 
 def follow(filename, sleep_sec=0.1, seek_end=True):
