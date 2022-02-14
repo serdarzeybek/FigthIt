@@ -7,8 +7,6 @@ import os
 method = 'dockercli'
 
 def follow(filename, sleep_sec=0.1, seek_end=True):
-    """ Yield each line from a file as they are written.
-    `sleep_sec` is the time to sleep after empty reads. """
     file = open(filename, 'r')
     curino = os.fstat(file.fileno()).st_ino
     if seek_end:
